@@ -544,6 +544,10 @@ section aside .filter_bx .shoes_check  .size_bx h6{
     .navtext{
         font-size: 0.6rem;
     }
+
+    header .brand_nav ul{
+        padding: 0px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -557,3 +561,4 @@ section aside .filter_bx .shoes_check  .size_bx h6{
     }
     
 }
+
