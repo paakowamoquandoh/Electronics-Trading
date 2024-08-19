@@ -9,7 +9,7 @@ body {
     background: rgb(128, 128, 128,.6);
 }
 header {
-    width: 70%;
+    width: 80%;
     height: auto;
     /* border: 1px solid #000; */
     margin: auto;
@@ -27,7 +27,7 @@ header nav {
 }
 
 header nav h5 span {
-    color: rgb(255, 142, 100);
+    color: teal;
 }
 header nav ul {
     display: flex;
@@ -35,7 +35,11 @@ header nav ul {
     list-style-type: none;
 }
 header nav ul li{
-    padding: 3px 0px 3px 30px;
+    padding: 3px 0px 3px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 header nav ul li a{
     text-decoration: none;
@@ -45,7 +49,7 @@ header nav ul li a{
     transition: .3s linear;
 }
 header nav ul li a:hover{
-    color: rgb(0, 0, 0);
+    color: teal;
 }
 header nav ul li a i{
     margin-right: 3px;
@@ -53,7 +57,7 @@ header nav ul li a i{
 
 header .brand_nav {
     width: 100%;
-    height: 50px;
+    height: 90px;
     background: rgb(0, 0, 0);
     color: #fff;
 }
@@ -93,23 +97,23 @@ header .brand_nav ul li i{
     transition: .3s linear;
 }
 header .brand_nav ul li:nth-last-child(1) i{
-    color:  rgb(255, 126, 79);
+    color: teal;
 }
 header .brand_nav ul li img{
-    width: 60px;
+    width: 100px;
 }
 header .brand_nav ul li:nth-child(2){
-    background:  rgb(255, 126, 79);
+    background: teal;
     width: 130px;
 }
 header .brand_nav ul li:nth-child(4){
     width: 130px;
 }
 header .brand_nav ul li:nth-child(2):hover{
-    background:  rgb(255, 126, 79);
+    background: teal;
 }
 header .brand_nav ul li:nth-child(4):hover{
-    background:  rgb(255, 126, 79);
+    background: teal;
 }
 
 header .brand_nav ul li:nth-child(1) .select_bx {
@@ -117,7 +121,7 @@ header .brand_nav ul li:nth-child(1) .select_bx {
     top: 100%;
     width: 90px;
     height: 0px;
-    background:  rgb(255, 126, 79);
+    background: teal;
     padding: 10px;
     border-radius: 5px;
     z-index: 9999999;
@@ -136,7 +140,7 @@ header .brand_nav ul li:nth-child(1) .select_bx_active{
 header .brand_nav .li_bx{
     width: 100%;
     height: auto;
-    background: rgb(255, 126, 79);
+    background:teal;
     padding: 8px 0px;
 }
 header .brand_nav .li_bx li{
@@ -150,7 +154,7 @@ header .brand_nav .li_bx li:hover{
 }
 
 section {
-    width: 70%;
+    width: 80%;
     height: auto;
     display: flex;
     margin: 34px  auto 0px auto;
@@ -318,7 +322,7 @@ section .shoes_bx .main_shoes_bx .card .color_tag h6{
     color: gray;
 }
 section .shoes_bx .main_shoes_bx .card .color_tag h6:nth-child(2){
-    color:  rgb(255, 126, 79);
+    color: teal;
 }
 section .shoes_bx .pagination{
    display: flex;
@@ -338,7 +342,7 @@ section .shoes_bx .pagination a{
 }
 section .shoes_bx .pagination a:hover{
   color: #fff;
-  background:  rgb(255, 126, 79);
+  background: teal;
 }
 section .shoes_bx .pagination h6{
   width: 40%;
@@ -346,7 +350,7 @@ section .shoes_bx .pagination h6{
   border-top: 1px solid rgb(0, 0, 0,.1);
   border-bottom: 1px solid rgb(0, 0, 0,.1);
   padding: 8px 0px;
-  color:  rgb(255, 126, 79);
+  color: teal;
 }
 
 section aside {
@@ -404,11 +408,11 @@ section aside .filter_bx .shoes_check li i{
     cursor: pointer;
 }
 section aside .filter_bx .shoes_check li i:hover{
-    color:  rgb(255, 126, 79);
+    color: teal;
 }
 /* javascript  class  */
 section aside .filter_bx .shoes_check li .i_active{
-    color:  rgb(255, 126, 79);
+    color: teal;
 }
 section aside .filter_bx .shoes_check .input_p{
     position: relative;
@@ -523,4 +527,33 @@ section aside .filter_bx .shoes_check  .size_bx h6{
     padding: 5px 7px;
     margin: 5px;
     cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1220px) {
+    section, header {
+        width: 94%;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .bi{
+        color: #000;
+    }
+    .navtext{
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navtext{
+        display: none;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
 }
