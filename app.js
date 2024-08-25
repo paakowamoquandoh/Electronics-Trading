@@ -21,7 +21,7 @@ fetch(url).then((Response => Response.json())).then((data) => {
     const newest_array = [...data].splice(0,8);
 
    data.forEach((el, i) => {
-        const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+        const {Img,Name,Category, Disc, Price,Tag, Color} = el;
         let card = document.createElement('a');
         card.classList.add('card');
         card.innerHTML = `
@@ -29,10 +29,10 @@ fetch(url).then((Response => Response.json())).then((data) => {
         <h5 class="card_title" title="${Name}">
         ${Name}
         </h5>
-        <p>${Category} Shoes</p>
+        <p>${Category} Appliance</p>
         <div class="price">
-          <h5>Rs ${Price}</h5>
-          <h5>MRP: <del>RS ${MRP}</del></h5>
+          <h5>Ghc ${Price}</h5>
+          <h5>Disc: <del>Ghc ${Disc}</del></h5>
         </div>
         <div class="color_tag">
           <h6>Color ${Color}</h6>
@@ -52,7 +52,7 @@ fetch(url).then((Response => Response.json())).then((data) => {
         sortby_opt.classList.toggle('sortby_opt_active');
 
         newest_array.forEach((el, i) => {
-            const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+            const {Img,Name,Category, Disc, Price,Tag, Color} = el;
             let card = document.createElement('a');
             card.classList.add('card');
             card.innerHTML = `
@@ -60,10 +60,10 @@ fetch(url).then((Response => Response.json())).then((data) => {
             <h5 class="card_title" title="${Name}">
             ${Name}
             </h5>
-            <p>${Category} Shoes</p>
+            <p>${Category} Appliance</p>
             <div class="price">
-              <h5>Rs ${Price}</h5>
-              <h5>MRP: <del>RS ${MRP}</del></h5>
+              <h5>Ghc ${Price}</h5>
+              <h5>Disc: <del>Ghc ${Disc}</del></h5>
             </div>
             <div class="color_tag">
               <h6>Color ${Color}</h6>
@@ -85,7 +85,7 @@ fetch(url).then((Response => Response.json())).then((data) => {
         sortby_opt.classList.toggle('sortby_opt_active');
 
         all_shoes_array.forEach((el, i) => {
-            const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+            const {Img,Name,Category, Disc, Price,Tag, Color} = el;
             let card = document.createElement('a');
             card.classList.add('card');
             card.innerHTML = `
@@ -93,10 +93,10 @@ fetch(url).then((Response => Response.json())).then((data) => {
             <h5 class="card_title" title="${Name}">
             ${Name}
             </h5>
-            <p>${Category} Shoes</p>
+            <p>${Category} Appliance</p>
             <div class="price">
-              <h5>Rs ${Price}</h5>
-              <h5>MRP: <del>RS ${MRP}</del></h5>
+              <h5>Ghc ${Price}</h5>
+              <h5>Disc: <del>Ghc ${Disc}</del></h5>
             </div>
             <div class="color_tag">
               <h6>Color ${Color}</h6>
@@ -119,7 +119,7 @@ fetch(url).then((Response => Response.json())).then((data) => {
         low_array.sort(({Price : a}, {Price : b}) => a-b)
 
         low_array.forEach((el, i) => {
-            const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+            const {Img,Name,Category, Disc, Price,Tag, Color} = el;
             let card = document.createElement('a');
             card.classList.add('card');
             card.innerHTML = `
@@ -127,10 +127,10 @@ fetch(url).then((Response => Response.json())).then((data) => {
             <h5 class="card_title" title="${Name}">
             ${Name}
             </h5>
-            <p>${Category} Shoes</p>
+            <p>${Category} Appliance</p>
             <div class="price">
-              <h5>Rs ${Price}</h5>
-              <h5>MRP: <del>RS ${MRP}</del></h5>
+              <h5>Ghc ${Price}</h5>
+              <h5>Disc: <del>Ghc ${Disc}</del></h5>
             </div>
             <div class="color_tag">
               <h6>Color ${Color}</h6>
@@ -153,9 +153,9 @@ fetch(url).then((Response => Response.json())).then((data) => {
         sortby_opt.classList.toggle('sortby_opt_active');
 
         high_array.sort(({Price : a}, {Price : b}) => a-b)
-        high_array.reverse();
+        high_array.reveGhce();
         high_array.forEach((el, i) => {
-            const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+            const {Img,Name,Category, Disc, Price,Tag, Color} = el;
             let card = document.createElement('a');
             card.classList.add('card');
             card.innerHTML = `
@@ -163,10 +163,10 @@ fetch(url).then((Response => Response.json())).then((data) => {
             <h5 class="card_title" title="${Name}">
             ${Name}
             </h5>
-            <p>${Category} Shoes</p>
+            <p>${Category} Appliance</p>
             <div class="price">
-              <h5>Rs ${Price}</h5>
-              <h5>MRP: <del>RS ${MRP}</del></h5>
+              <h5>Ghc ${Price}</h5>
+              <h5>Disc: <del>Ghc ${Disc}</del></h5>
             </div>
             <div class="color_tag">
               <h6>Color ${Color}</h6>
@@ -197,7 +197,7 @@ fetch(url).then((Response => Response.json())).then((data) => {
             All_Main_filter_array = All_Main_filter_array.concat(boot_array);
 
             All_Main_filter_array.forEach((el, i) => {
-                const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+                const {Img,Name,Category, Disc, Price,Tag, Color} = el;
                 let card = document.createElement('a');
                 card.classList.add('card');
                 card.innerHTML = `
@@ -205,10 +205,10 @@ fetch(url).then((Response => Response.json())).then((data) => {
                 <h5 class="card_title" title="${Name}">
                 ${Name}
                 </h5>
-                <p>${Category} Shoes</p>
+                <p>${Category} Appliance</p>
                 <div class="price">
-                  <h5>Rs ${Price}</h5>
-                  <h5>MRP: <del>RS ${MRP}</del></h5>
+                  <h5>Ghc ${Price}</h5>
+                  <h5>Disc: <del>Ghc ${Disc}</del></h5>
                 </div>
                 <div class="color_tag">
                   <h6>Color ${Color}</h6>
@@ -227,7 +227,7 @@ fetch(url).then((Response => Response.json())).then((data) => {
                 return boot_array.indexOf(el) < 0;
             })
             All_Main_filter_array.forEach((el, i) => {
-                const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+                const {Img,Name,Category, Disc, Price,Tag, Color} = el;
                 let card = document.createElement('a');
                 card.classList.add('card');
                 card.innerHTML = `
@@ -235,10 +235,10 @@ fetch(url).then((Response => Response.json())).then((data) => {
                 <h5 class="card_title" title="${Name}">
                 ${Name}
                 </h5>
-                <p>${Category} Shoes</p>
+                <p>${Category} Appliance</p>
                 <div class="price">
-                  <h5>Rs ${Price}</h5>
-                  <h5>MRP: <del>RS ${MRP}</del></h5>
+                  <h5>Ghc ${Price}</h5>
+                  <h5>Disc: <del>Ghc ${Disc}</del></h5>
                 </div>
                 <div class="color_tag">
                   <h6>Color ${Color}</h6>
@@ -252,24 +252,24 @@ fetch(url).then((Response => Response.json())).then((data) => {
 
     // Loafer shoes 
 
-    let loafers_array = all_shoes_array.filter((el)=> {
+    let loafeGhc_array = all_shoes_array.filter((el)=> {
         return el.Type === 'Loafer';
     })
 
 
-    let loafers = document.getElementById('loafers');
+    let loafeGhc = document.getElementById('loafeGhc');
 
-    loafers.addEventListener('click', ()=> {
-        if (loafers.title === "loafers_filter_on") {
+    loafeGhc.addEventListener('click', ()=> {
+        if (loafeGhc.title === "loafeGhc_filter_on") {
             main_shoes_bx.innerHTML = '';
-            loafers.classList.toggle('i_active');
-            loafers.classList.toggle('bi-toggle2-off');
-            loafers.classList.toggle('bi-toggle2-on');
-            loafers.title = 'loafers_filter_off';
-            All_Main_filter_array = All_Main_filter_array.concat(loafers_array);
+            loafeGhc.classList.toggle('i_active');
+            loafeGhc.classList.toggle('bi-toggle2-off');
+            loafeGhc.classList.toggle('bi-toggle2-on');
+            loafeGhc.title = 'loafeGhc_filter_off';
+            All_Main_filter_array = All_Main_filter_array.concat(loafeGhc_array);
 
             All_Main_filter_array.forEach((el, i) => {
-                const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+                const {Img,Name,Category, Disc, Price,Tag, Color} = el;
                 let card = document.createElement('a');
                 card.classList.add('card');
                 card.innerHTML = `
@@ -277,10 +277,10 @@ fetch(url).then((Response => Response.json())).then((data) => {
                 <h5 class="card_title" title="${Name}">
                 ${Name}
                 </h5>
-                <p>${Category} Shoes</p>
+                <p>${Category} Appliance</p>
                 <div class="price">
-                  <h5>Rs ${Price}</h5>
-                  <h5>MRP: <del>RS ${MRP}</del></h5>
+                  <h5>Ghc ${Price}</h5>
+                  <h5>Disc: <del>Ghc ${Disc}</del></h5>
                 </div>
                 <div class="color_tag">
                   <h6>Color ${Color}</h6>
@@ -291,15 +291,15 @@ fetch(url).then((Response => Response.json())).then((data) => {
             });
         } else {
             main_shoes_bx.innerHTML = '';
-            loafers.classList.toggle('i_active');
-            loafers.classList.toggle('bi-toggle2-off');
-            loafers.classList.toggle('bi-toggle2-on');
-            loafers.title = 'loafers_filter_on';
+            loafeGhc.classList.toggle('i_active');
+            loafeGhc.classList.toggle('bi-toggle2-off');
+            loafeGhc.classList.toggle('bi-toggle2-on');
+            loafeGhc.title = 'loafeGhc_filter_on';
             All_Main_filter_array = All_Main_filter_array.filter((el)=> {
-                return loafers_array.indexOf(el) < 0;
+                return loafeGhc_array.indexOf(el) < 0;
             })
             All_Main_filter_array.forEach((el, i) => {
-                const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+                const {Img,Name,Category, Disc, Price,Tag, Color} = el;
                 let card = document.createElement('a');
                 card.classList.add('card');
                 card.innerHTML = `
@@ -307,10 +307,10 @@ fetch(url).then((Response => Response.json())).then((data) => {
                 <h5 class="card_title" title="${Name}">
                 ${Name}
                 </h5>
-                <p>${Category} Shoes</p>
+                <p>${Category} Appliance</p>
                 <div class="price">
-                  <h5>Rs ${Price}</h5>
-                  <h5>MRP: <del>RS ${MRP}</del></h5>
+                  <h5>Ghc ${Price}</h5>
+                  <h5>Disc: <del>Ghc ${Disc}</del></h5>
                 </div>
                 <div class="color_tag">
                   <h6>Color ${Color}</h6>
@@ -343,7 +343,7 @@ left_input.addEventListener('change', ()=> {
 
   main_shoes_bx.innerHTML = '';
   array_1000_50000_left.forEach((el, i) => {
-    const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+    const {Img,Name,Category, Disc, Price,Tag, Color} = el;
     let card = document.createElement('a');
     card.classList.add('card');
     card.innerHTML = `
@@ -351,10 +351,10 @@ left_input.addEventListener('change', ()=> {
     <h5 class="card_title" title="${Name}">
     ${Name}
     </h5>
-    <p>${Category} Shoes</p>
+    <p>${Category} Appliance</p>
     <div class="price">
-      <h5>Rs ${Price}</h5>
-      <h5>MRP: <del>RS ${MRP}</del></h5>
+      <h5>Ghc ${Price}</h5>
+      <h5>Disc: <del>Ghc ${Disc}</del></h5>
     </div>
     <div class="color_tag">
       <h6>Color ${Color}</h6>
@@ -383,7 +383,7 @@ right_input.addEventListener('change', ()=> {
 
   main_shoes_bx.innerHTML = '';
   array_1000_50000_right.forEach((el, i) => {
-    const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+    const {Img,Name,Category, Disc, Price,Tag, Color} = el;
     let card = document.createElement('a');
     card.classList.add('card');
     card.innerHTML = `
@@ -391,10 +391,10 @@ right_input.addEventListener('change', ()=> {
     <h5 class="card_title" title="${Name}">
     ${Name}
     </h5>
-    <p>${Category} Shoes</p>
+    <p>${Category} Appliance</p>
     <div class="price">
-      <h5>Rs ${Price}</h5>
-      <h5>MRP: <del>RS ${MRP}</del></h5>
+      <h5>Ghc ${Price}</h5>
+      <h5>Disc: <del>Ghc ${Disc}</del></h5>
     </div>
     <div class="color_tag">
       <h6>Color ${Color}</h6>
@@ -415,7 +415,7 @@ Array.from(document.getElementsByClassName('color')).forEach((el, i) => {
     });
     main_shoes_bx.innerHTML = '';
     color_array.forEach((el, i) => {
-      const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+      const {Img,Name,Category, Disc, Price,Tag, Color} = el;
       let card = document.createElement('a');
       card.classList.add('card');
       card.innerHTML = `
@@ -423,10 +423,10 @@ Array.from(document.getElementsByClassName('color')).forEach((el, i) => {
       <h5 class="card_title" title="${Name}">
       ${Name}
       </h5>
-      <p>${Category} Shoes</p>
+      <p>${Category} Appliance</p>
       <div class="price">
-        <h5>Rs ${Price}</h5>
-        <h5>MRP: <del>RS ${MRP}</del></h5>
+        <h5>Ghc ${Price}</h5>
+        <h5>Disc: <del>Ghc ${Disc}</del></h5>
       </div>
       <div class="color_tag">
         <h6>Color ${Color}</h6>
@@ -440,10 +440,10 @@ Array.from(document.getElementsByClassName('color')).forEach((el, i) => {
 
 
 
-document.getElementsByClassName('colors')[0].addEventListener('click', ()=> {
+document.getElementsByClassName('coloGhc')[0].addEventListener('click', ()=> {
   main_shoes_bx.innerHTML = '';
   all_shoes_array.forEach((el, i) => {
-    const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+    const {Img,Name,Category, Disc, Price,Tag, Color} = el;
     let card = document.createElement('a');
     card.classList.add('card');
     card.innerHTML = `
@@ -451,10 +451,10 @@ document.getElementsByClassName('colors')[0].addEventListener('click', ()=> {
     <h5 class="card_title" title="${Name}">
     ${Name}
     </h5>
-    <p>${Category} Shoes</p>
+    <p>${Category} Appliance</p>
     <div class="price">
-      <h5>Rs ${Price}</h5>
-      <h5>MRP: <del>RS ${MRP}</del></h5>
+      <h5>Ghc ${Price}</h5>
+      <h5>Disc: <del>Ghc ${Disc}</del></h5>
     </div>
     <div class="color_tag">
       <h6>Color ${Color}</h6>
@@ -475,7 +475,7 @@ main_shoes_bx.appendChild(card)
   })
 
   number_array.forEach((el, i) => {
-    const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+    const {Img,Name,Category, Disc, Price,Tag, Color} = el;
     let card = document.createElement('a');
     card.classList.add('card');
     card.innerHTML = `
@@ -483,10 +483,10 @@ main_shoes_bx.appendChild(card)
     <h5 class="card_title" title="${Name}">
     ${Name}
     </h5>
-    <p>${Category} Shoes</p>
+    <p>${Category} Appliance</p>
     <div class="price">
-      <h5>Rs ${Price}</h5>
-      <h5>MRP: <del>RS ${MRP}</del></h5>
+      <h5>Ghc ${Price}</h5>
+      <h5>Disc: <del>Ghc ${Disc}</del></h5>
     </div>
     <div class="color_tag">
       <h6>Color ${Color}</h6>
@@ -506,7 +506,7 @@ main_shoes_bx.appendChild(card)
   })
 
   number_array.forEach((el, i) => {
-    const {Img,Name,Category, MRP, Price,Tag, Color} = el;
+    const {Img,Name,Category, Disc, Price,Tag, Color} = el;
     let card = document.createElement('a');
     card.classList.add('card');
     card.innerHTML = `
@@ -514,10 +514,10 @@ main_shoes_bx.appendChild(card)
     <h5 class="card_title" title="${Name}">
     ${Name}
     </h5>
-    <p>${Category} Shoes</p>
+    <p>${Category} Appliance</p>
     <div class="price">
-      <h5>Rs ${Price}</h5>
-      <h5>MRP: <del>RS ${MRP}</del></h5>
+      <h5>Ghc ${Price}</h5>
+      <h5>Disc: <del>Ghc ${Disc}</del></h5>
     </div>
     <div class="color_tag">
       <h6>Color ${Color}</h6>
