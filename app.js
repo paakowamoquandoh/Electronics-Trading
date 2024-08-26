@@ -14,6 +14,7 @@ let url = "json.json";
 let main_shoes_bx = document.getElementsByClassName('main_shoes_bx')[0];
 
 
+
 fetch(url).then((Response => Response.json())).then((data) => {
     const all_shoes_array = [...data];
     const low_array = [...data];
@@ -257,16 +258,16 @@ fetch(url).then((Response => Response.json())).then((data) => {
     })
 
 
-    let loafeGhc = document.getElementById('loafeGhc');
+    let loafeGhc = document.getElementById('loafers');
 
-    loafeGhc.addEventListener('click', ()=> {
-        if (loafeGhc.title === "loafeGhc_filter_on") {
+    loafers.addEventListener('click', ()=> {
+        if (loafers.title === "loafers_filter_on") {
             main_shoes_bx.innerHTML = '';
-            loafeGhc.classList.toggle('i_active');
-            loafeGhc.classList.toggle('bi-toggle2-off');
-            loafeGhc.classList.toggle('bi-toggle2-on');
-            loafeGhc.title = 'loafeGhc_filter_off';
-            All_Main_filter_array = All_Main_filter_array.concat(loafeGhc_array);
+            loafers.classList.toggle('i_active');
+            loafers.classList.toggle('bi-toggle2-off');
+            loafers.classList.toggle('bi-toggle2-on');
+            loafers.title = 'loafers_filter_off';
+            All_Main_filter_array = All_Main_filter_array.concat(loafers_array);
 
             All_Main_filter_array.forEach((el, i) => {
                 const {Img,Name,Category, Disc, Price,Tag, Color} = el;
@@ -291,12 +292,12 @@ fetch(url).then((Response => Response.json())).then((data) => {
             });
         } else {
             main_shoes_bx.innerHTML = '';
-            loafeGhc.classList.toggle('i_active');
-            loafeGhc.classList.toggle('bi-toggle2-off');
-            loafeGhc.classList.toggle('bi-toggle2-on');
-            loafeGhc.title = 'loafeGhc_filter_on';
+            loafers.classList.toggle('i_active');
+            loafers.classList.toggle('bi-toggle2-off');
+            loafers.classList.toggle('bi-toggle2-on');
+            loafers.title = 'loafers_filter_on';
             All_Main_filter_array = All_Main_filter_array.filter((el)=> {
-                return loafeGhc_array.indexOf(el) < 0;
+                return loafers_array.indexOf(el) < 0;
             })
             All_Main_filter_array.forEach((el, i) => {
                 const {Img,Name,Category, Disc, Price,Tag, Color} = el;
@@ -440,7 +441,7 @@ Array.from(document.getElementsByClassName('color')).forEach((el, i) => {
 
 
 
-document.getElementsByClassName('coloGhc')[0].addEventListener('click', ()=> {
+document.getElementsByClassName('colors')[0].addEventListener('click', ()=> {
   main_shoes_bx.innerHTML = '';
   all_shoes_array.forEach((el, i) => {
     const {Img,Name,Category, Disc, Price,Tag, Color} = el;

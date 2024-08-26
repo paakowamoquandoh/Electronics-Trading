@@ -26,24 +26,33 @@
         </ul>
       </nav>
       <div class="brand_nav">
-        <ul>
-          <li>
-            Select Category <i class="bi bi-chevron-down"></i>
-            <div class="select_bx">
-              <h5>Home</h5>
-              <h5>Outdoor</h5>
-              <h5>Office</h5>
-            </div>
+        <ul class="dropdownBtn">
+          <li >
+            <div class="dropdown">
+              <button class="dropdown-button">Select Category <i class="bi bi-chevron-down"></i></button>
+              <div class="dropdown-content">
+                  <a href="#">Item 1</a>
+                  <a href="#">Item 2</a>
+                  <a href="#">Item 3</a>
+                  <a href="#">Item 4</a>
+                  <a href="#">Item 5</a>
+                  <a href="#">Item 6</a>
+                  <a href="#">Item 7</a>
+                  <a href="#">Item 8</a>
+                  <a href="#">Item 9</a>
+                  <a href="#">Item 10</a>
+              </div>
+          </div>
           </li>
           <li>
-            <a href="#"><img src="assets/media/icons/icon2.png" alt="" /></a>
+            <a href="#"><img class="mobileDisplayOff" src="assets/media/icons/icon2.png" alt="" /></a>
           </li>
-          <li><a href="#">GO TO PRODUCER ZONE</a></li>
+          <li><a href="#"><span >BEST DEALS ZONE</span></a></li>
           <li>
-            <a href="#"><img src="assets/media/icons/icon1.png" alt="" /></a>
+            <a href="#"><img class="mobileDisplayOff" src="assets/media/icons/icon1.png" alt="" /></a>
           </li>
-          <li><a href="#">WHAT ARE YOU LOoKING FOR? </a></li>
-          <li><i class="bi bi-search"></i></li>
+          <li><a href="#"><span>WHAT ARE YOU LOOKING FOR?</span></a></li>
+          <li><i class="bi bi-search mobileDisplayOff"></i></li>
         </ul>
         <div class="li_bx">
           <ul>
@@ -70,7 +79,7 @@
           <p class="total_shoes">Home Appliances: <span>269</span></p>
           <div class="shoes_check">
             <div class="shoes_checked">
-              <h6>Shoes</h6>
+              <h6>Products</h6>
               <i class="bi bi-node-minus-fill"></i>
             </div>
             <li>Electronics <i id="boots" class="bi bi-toggle2-off" title="boots_filter_on"></i></li>
@@ -79,12 +88,17 @@
           <!-- icon  -->
           <div class="shoes_check">
             <div class="shoes_checked">
-              <h6>Icon</h6>
+              <h6>Select Brand</h6>
               <i class="bi bi-node-minus-fill"></i>
             </div>
-            <li>Home <i class="bi bi-toggle2-off"></i></li>
-            <li>Kitchen <i class="bi bi-toggle2-off"></i></li>
-            <li>Office <i class="bi bi-toggle2-off"></i></li>
+            <li>Nasco <i class="bi bi-toggle2-off"></i></li>
+            <li>TCL <i class="bi bi-toggle2-off"></i></li>
+            <li>Samsung <i class="bi bi-toggle2-off"></i></li>
+            <li>Midea <i class="bi bi-toggle2-off"></i></li>
+            <li>Roch <i class="bi bi-toggle2-off"></i></li>
+            <li>Pearl <i class="bi bi-toggle2-off"></i></li>
+            <li>Asano <i class="bi bi-toggle2-off"></i></li>
+            <li>Snowsea <i class="bi bi-toggle2-off"></i></li>
             <li>Others <i class="bi bi-toggle2-off"></i></li>
           </div>
           <!-- price  -->
@@ -110,12 +124,12 @@
           </div>
 
           <!-- color  -->
-          <div class="shoes_check">
+          <!-- <div class="shoes_check">
             <div class="shoes_checked">
-              <h6>Shoes</h6>
+              <h6>Products</h6>
               <i class="bi bi-node-minus-fill"></i>
-            </div>
-            <div class="color_bx">
+            </div> -->
+            <!-- <div class="color_bx">
               <h6 class="color"></h6>
               <h6 class="color"></h6>
               <h6 class="color"></h6>
@@ -130,14 +144,14 @@
               <h6 class="color"></h6>
               <h6 class="color"></h6>
               <h6 class="colors"></h6>
-            </div>
+            </div> -->
           </div>
-          <div class="shoes_check">
+          <!-- <div class="shoes_check">
             <div class="shoes_checked">
               <h6>Quantity</h6>
               <i class="bi bi-node-minus-fill"></i>
-            </div>
-            <div class="size_bx">
+            </div> -->
+            <!-- <div class="size_bx">
               <h6 class="size">1</h6>
               <h6 class="size">2</h6>
               <h6 class="size">3</h6>
@@ -152,20 +166,20 @@
               <h6 class="size">18</h6>
               <h6 class="size">11</h6>
               <h6 class="size">8.5</h6>
-            </div>
+            </div> -->
           </div>
         </div>
       </aside>
       <div class="shoes_bx">
         <nav>
           <h6>
-            Man <i class="bi bi-chevron-right"></i> Nike
-            <i class="bi bi-chevron-right"></i> <span> All Shoes</span>
+            All Products <i class="bi bi-chevron-right"></i> Appliances
+            <i class="bi bi-chevron-right"></i> <span> Home</span>
           </h6>
         </nav>
         <section>
           <div class="title_sortby">
-            <h4>Shoes</h4>
+            <h4>Products</h4>
             <div class="select_sortby">
               <button id="sortby_btn">
                 <h5>Sort By</h5>
@@ -205,6 +219,6 @@
         </div>
       </div>
     </section>
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
